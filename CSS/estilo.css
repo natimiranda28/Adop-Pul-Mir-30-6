@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Tai+Heritage+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+	grid-area: nav;
+}
+
+.intr-text{
+	grid-area: intr-text;
+}
+
+.lista-art{
+	grid-area: lista-art;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#contenedor-grid{
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "nav" "intr-text" "lista-art" "footer";
+}
+
+header h1{
+	top: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 200%;
+}
+
+h1{
+	background-color: rgb(204, 230, 255);
+	text-align: center;
+	font-size: 25px;
+}
+
+p{
+	color: MediumPurple;
+	font-size: 150%;
+	margin: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+
+#barra_nav{
+	top: 0;
+	width: 100%;
+	background-color: rgb(255, 230, 247);
+	position: sticky;
+}
+
+ol{
+	list-style: none;
+	display: flex;
+	flex-direction: center;
+	align-items: center;
+	justify-content: center;
+	font-size: 0;
+}
+
+.elem-lista{
+	font-size: 20px;
+	padding: 5px;
+}
+
+.logo{
+	display: inline-block;
+	width: 40px;
+	float: left;
+	border-radius: 50%;
+}
+
+.main_art{
+	overflow: auto;
+	display: inline-block;
+	border: rgb(255, 230, 247) solid;
+	background-color: darkgrey;
+	border-radius: 20px;
+}
+
+article img{
+	border-radius: 20px;
+	margin: 0px 10px;
+	float: left;
+}
+
+section article h1{
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+}
+
+.main-noticia{
+	border: rgb(255, 230, 247) solid;
+	background-color: darkgrey;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+section h1{
+	top: 0;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+}
+
+section a img{
+	border-radius: 20px;
+	float: left;
+}
+
+#divisor1{
+	width: 45%;
+}
+
+#divisor2{
+	width: 45%;
+}
+
+footer{
+	grid-area: footer;
+	background-color: rgb(255, 230, 247);
+	position: relative;
+  	bottom: 0;
+  	width: auto;
+  	display: flex;
+  	flex-direction: row;
+}
+
+.elem-foot{
+	margin: 5px;
+}
+
+/*------------------------------------------------------------*/
+
+.cont-per-box{
+	width: 45%;
+	position: relative;
+	overflow: auto;
+	background-color: darkgrey;
+	display: inline-block;
+	margin: 15px;
+	border-radius: 20px;
+	border: rgb(255, 230, 247) solid;
+}
+
+.cont-per-box img{
+	float: center;
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+
+#vol-section{
+	text-align: center;
+	width: 100vw;
+}
+
+.clear-float{
+	clear: float;
+}
+
+/*------------------------------------------------------------*/
+
+.cont-per-box iframe{
+	float: center;
+	border-radius: 20px;
+	width: 200px;
+	height: 200px;
+	margin: 5px;
+	padding: 5px;
+}
+
+/*------------------------------------------------------------*/
+
+ul{
+	list-style: none;
+	font-size: 0;
+}
+
+.elem-lis-pago{
+	width: 100%;
+	overflow: auto;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.elem-lis-pago img{
+	width: 200px;
+	height: 75px;
+}
+
+/*------------------------------------------------------------*/
+
+@media (max-width: 768px){
+
+	#contenedor-grid{
+	width: auto;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+	grid-template-areas: "nav" "intr-text" "lista-art" "footer";
+	}
+
+	h1{
+	background-color: rgb(204, 230, 255);
+	width: 100vw;
+	font-size: 25px;
+	}
+
+	#barra_nav{
+	width: 100vw;
+	}
+
+	ol{
+	list-style: none;
+	position: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 0;
+	}
+
+	.lista-art{
+	margin: 0;
+	padding: 0;
+	width: auto;
+	grid-area: lista-art;
+	display: flex;
+	flex-direction: column;
+	}
+
+	.main_art{
+	overflow: auto;
+	border: rgb(255, 230, 247) solid;
+	background-color: darkgrey;
+	border-radius: 20px;
+	}
+
+	.main_art p{
+		width: 95vw;
+	}
+
+	article img{
+	float: center;
+	border-radius: 20px;
+	width: 95vw;
+	height: 40%;
+	}
+
+	section article h1{
+	top: 0;
+	border-radius: 20px;
+	}
+
+	section a img{
+	border-radius: 20px;
+	float: left;
+	width: 95vw;
+	}
+
+	#divisor1{
+	width: auto;
+	}
+
+	#divisor2{
+	width: auto;
+	}
+
+	.cont-per-box{
+	width: auto;
+	position: relative;
+	overflow: auto;
+	background-color: darkgrey;
+	display: inline-block;
+	margin: 15px;
+	border-radius: 20px;
+	border: rgb(255, 230, 247) solid;
+	}
+}

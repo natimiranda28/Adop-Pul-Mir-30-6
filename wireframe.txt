@@ -1,0 +1,19 @@
+index: https://wireframe.cc/48DUA2 (desktop)
+index: https://wireframe.cc/I6AAx8 (mobile)
+
+contactos:
+https://wireframe.cc/VogqMP (desktop)
+https://wireframe.cc/abI9cU (mobile)
+
+Donaciones:
+https://wireframe.cc/TBp8um (desktop)
+https://wireframe.cc/CBcPOD (mobile)
+
+Asociados:
+https://wireframe.cc/eqkq0t (desktop)
+https://wireframe.cc/7jSsIv (mobile)
+
+
+Mapas:
+https://wireframe.cc/738zwO (desktop)
+https://wireframe.cc/nxemMd (mobile)
