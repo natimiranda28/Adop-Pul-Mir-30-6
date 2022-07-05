@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css"> 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta charset="utf-8">
+	<!-- Boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<title>Adopciones Pulgarcito</title>	
 </head>
 
 <body>
-	<div id="contenedor-grid">
+	<div id="contnedor-grid">
 		<header>
-			<img class="logo" src="imagenes/logo.jpg">
-			<h1>Encontra a tu compañero de vida hoy!</h1>
-			<nav id="barra_nav"><ol>
-				<li class="elem-lista"><a href="HTML/contactos.html">Comunicate con nosotros</a></li>	
-				<li class="elem-lista"><a href="HTML/donaciones.html">Donaciones</a></li>
-				<li class="elem-lista"><a href="HTML/asociados.html">Veterinarios</a></li>
-				<li class="elem-lista"><a href="HTML/mapas.html">Ubicaciones</a></li>
-			</nav></ol>		
+			<h1 class="main-titulo">Encontra a tu compañero de vida hoy!</h1>
+			<nav class="navbar navbar-expand-lg bg-light-pink">
+			  <div class="container-fluid">
+			    <a class="navbar-brand logo-pag" href="index.html"><img class="logo" src="imagenes/logo.jpg"></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    			</button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav">
+			        <a class="nav-link" href="HTML/contactos.html">Contactos</a>
+			        <a class="nav-link" href="HTML/donaciones.html">Donaciones</a>
+			        <a class="nav-link" href="HTML/asociados.html">Veterinarios</a>
+			        <a class="nav-link" href="HTML/mapas.html">Ubicaciones</a>
+			      </div>
+			    </div>
+			</nav>
 		</header>
 
-		<section class="intr-text">
+		<section class="intr-text py-3">
 			<article>
 				<p>
 					Somos una asociacion sin fines de lucro que trabaja por el bienestar de los animales. Nuestra mision es lograr que cada animal en situacion de calle Sencuentre a su familia para siempre y contribuya a crear mas familias felices. Animate hoy! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -39,33 +49,55 @@
 			</article>
 		</section>
 
-		<div class="lista-art">
-			<div id="divisor1">
-				<section class="main_art">
-					<article>
-						<h1 class="titulo_art">Nuestro perro fundador: Gaucho</h1>
-						<img src="imagenes/perro.jpg" width="300" height="400">
+		<section class="py-3 lis-home">
+			<div class="container-fluid">
+				<div class="row">
+					<article class="col-md-6 col-lg-6 bg-dark-g">
+						<h1 class="main-titulo">Nuestro perro fundador: Gaucho</h1>
+						<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+						  <div class="carousel-indicators">
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						  </div>
+						  <div class="carousel-inner">
+						    <div class="carousel-item active">
+						      <img src="imagenes/perro.jpg" class="d-block w-100">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="imagenes/perro2.jpg" class="d-block w-100">
+						    </div>
+						    <div class="carousel-item">
+						      <img src="imagenes/perro3.jpg" class="d-block w-100">
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
 						<p>Gaucho nacio el 2 de Diciembre de 2006 en la ciudad de Salta, Argentina. Fue rescatado por una de nuestras voluntarias y estuvo con nosotros durante 12 hermosos años. Su gran amor y compañerismo agrando nuestro corazon e inspiro a buscar que todos los rescataditos puedan tener una hermosa vida junto a una familia,</p>
 					</article>
-				</section>
-			</div>
 
-			<div id="divisor2">
-				<section class="main-noticia">
-					<h1>Noticia del día!</h1>
-					<a href="https://news.google.com/search?for=salud+animal&hl=es-419&gl=AR&ceid=AR%3Aes-419"><img src="imagenes/veterinaria.jpg"></a>
+					<article class="col-md-6 col-lg-6 bg-dark-g">
+					<h1 class="main-titulo">Noticia del día!</h1>
+					<a href="https://news.google.com/search?for=salud+animal&hl=es-419&gl=AR&ceid=AR%3Aes-419"><img class="w-100 d- block" src="imagenes/veterinaria.jpg"></a>
 					<p class="text-not">Mantenete al dia con las ultimas noticias en el mundo de la medicina animal y recibi los ultimos datos de relevancia en nuestra lucha para eliminar la desigualdad por los animales!</p>
-				</section>
+				</article>
 			</div>
-		</div>
+		</section>
 
-		<div>
+		<section>
 			<footer>
 				<h2 class="elem-foot">Contactate con nosotros y mantenete al tanto de las novedades de nuestra org en: </h2>
 				<a class="elem-foot" href="https://www.facebook.com"><img src="imagenes/facebook.jpg" width="50" height="50"></a>
 				<a class="elem-foot" href="https://www.instagram.com"><img src="imagenes/instagram.jpg" width="50" height="50"></a>
 			</footer>
-		</div>
+		</section>
 	</div>
 </body>
 </html>
