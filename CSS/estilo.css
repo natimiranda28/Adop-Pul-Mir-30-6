@@ -43,6 +43,21 @@ header h1: hover{
 	}
 }
 
+@keyframes animation2 {
+    from {
+        opacity: 0;
+    }
+    15%, 45% {
+        opacity: .15;
+    }
+    25%, 75% {
+        opacity: .35;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 .bg-dark-g{
 	border: rgb(255, 230, 247) solid;
 	background-color: lightgray;
@@ -56,6 +71,9 @@ p{
 	color: MediumPurple;
 	font-size: 150%;
 	margin: 10px;
+	animation-duration: 1s;
+	animation-name: animation2;
+	animation-iteration-count: 1;
 }
 
 footer{
@@ -97,6 +115,10 @@ header{
 	grid-template-areas: "nav" "intr-text" "lis-home" "footer";
 }
 
+.navbar-nav a{
+	font-size: 1.5em;
+}
+
 /* Desde aqui empienza el codigo CSS con modificaciones orientadas para Contactos*/
 
 .cas-per{
@@ -114,5 +136,19 @@ header{
 /*Media queries necesarios para el funcionamiento optimo de la pagina*/
 
 @media (max-width: 768px){
-	
+	.elem-foot{
+		margin: 5px;
+		font-size: 1.2em;
+	}
+
+	h5 a{
+		font-size: 1.6em;
+		text-decoration: none;
+		color: darkblue;
+	}
+
+	.nro-tel{
+		font-size: 1.6em;
+		color: darkblue;
+	}
 }
