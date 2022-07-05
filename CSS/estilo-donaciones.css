@@ -16,6 +16,10 @@ header{
 	grid-area: intr-text;
 }
 
+.lis-home{
+	grid-area: lis-home;
+}
+
 .lista-art{
 	grid-area: lista-art;
 	display: flex;
@@ -29,7 +33,7 @@ header{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(4, 1fr);
-	grid-template-areas: "nav" "intr-text" "lista-art" "footer";
+	grid-template-areas: "nav" "intr-text" "lis-home" "footer";
 }
 
 header h1{
