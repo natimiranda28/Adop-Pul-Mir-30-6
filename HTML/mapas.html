@@ -3,78 +3,97 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../CSS/estilo.css"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Boostrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<title>Ubicaciones</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/estilo-2.css">
 </head>
 <body>
 	<header>
-	<img class="logo" src="../imagenes/logo.jpg">
-	<h1>Encontra a tu compañero de vida hoy!</h1>
-	<nav id="barra_nav"><ol>
-		<li class="elem-lista"><a href="../index.html">Inicio</a></li>
-		<li class="elem-lista"><a href="contactos.html">Contactos</a></li>
-		<li class="elem-lista"><a href="donaciones.html">Donaciones</a></li>
-		<li class="elem-lista"><a href="asociados.html">Veterinarios</a></li>
-	</nav></ol>		
+			<h1 class="main-titulo">Encontra a tu compañero de vida hoy!</h1>
+			<nav class="navbar navbar-expand-lg bg-light-pink">
+			  <div class="container-fluid">
+			    <a class="navbar-brand logo-pag" href="../index.html"><img class="logo" src="../imagenes/logo.jpg"></a>
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    			</button>
+			    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			      <div class="navbar-nav text">
+			        <a class="nav-link" href="../index.html">Inicio</a>
+			        <a class="nav-link" href="contactos.html">Contactos</a>
+			        <a class="nav-link" href="donaciones.html">Donaciones</a>
+			        <a class="nav-link" href="asociados.html">Veterinarios</a>
+			      </div>
+			    </div>
+			</nav>
 	</header>
 
-	<section>
+	<section class="py-3">
 		<article>
 			<p>Ademas de nuestros queridos colaboradores personales y veterinarios que decidieron unirse a nuestra causa, tambien puedes recurrir a nuestras instalaciones y edificios asociados. Muchos de estos son pequeños negocios que nos ayudan para recibir mercaderia y ayuda de ustedes. Puedes saber sobre todas las instalaciones que colaboran con nosotros aqui:</p>
 		</article>
 	</section>
 
-	<section id="vol-section">
-		<div class="cont-per-box" class="left-vol-box">
-			<img src="../imagenes/cede.jpg">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<h5>Nombre: Cede Principal Pulgarcito</h5>
-			<h5>Facebook: <a href="https://www.facebook.com">Adopciones Pulgarcito</a></h5>
-			<h5>Direccion: Mi casita 0800</h5>
-			<h5>Celular: 4353564576767</h5>
-			<h5>Funcion: Cede principal de Pulgarcito Adopciones</h5>
-		</div>
+		<section class="py-3">
+			<div class="container-fluid">
+				<div class="row cas-per">
+					<article class="hei-map col-md-6 col-lg-3 bg-dark-g">
+						<img class="py-3 img-vet" width="200px" height="200px" src="../imagenes/cede.jpg">
+						<iframe class="py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<h5><b>Nombre: Cede Pulgarcito</b></h5>
+						<h5>Direccion: Mi casita 1001</h5>
+						<h5>Celular: <span class="nro-tel">+543875043945</span></h5>
+						<h5>Funcion: Cede Central. El edificio principal de Adopciones Pulgarcito, aqui puedes encontrar a nuestro personal y cede de emergencias medicas animales</h5>
+					</article>
 
-		<div class="cont-per-box" class="left-vol-box">
-			<img src="../imagenes/kiosko1.jpg">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<h5>Nombre: El kiosquero Piola</h5>
-			<h5>Direccion: Mi casita 0801</h5>
-			<h5>Celular: 4353564576767</h5>
-			<h5>Instagram: <a href="https://www.instagram.com">@kioskopiola</a></h5>
-			<h5>Funcion: Asociado. En El kiosquero piola puedes dejar alimentos para animal y prendas viejas para su reacondicionamiento, ellos se encargaran de que lleguen a manos de Pulgarcito Adopciones.</h5>
-		</div>
+					<article class="hei-map col-md-6 col-lg-3 bg-dark-g">
+						<img class="py-3 img-vet" width="200px" height="200px" src="../imagenes/kiosko1.jpg">
+						<iframe class="py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<h5><b>Nombre: Kiosko One</b></h5>
+						<h5>Direccion: Mi casita 101</h5>
+						<h5>Facebook: <a href="https://www.facebook.com">Kiosko One</a></h5>
+						<h5>Instagram: <a href="https://www.instagram.com">@kioskoone</a></h5>
+						<h5>Celular: <span class="nro-tel">1234567890</span></h5>
+						<h5>Funcion: Asociado. En Kiosko One puedes dejar alimentos para animal y prendas viejas para su reacondicionamiento, ellos se encargaran de que lleguen a manos de Pulgarcito Adopciones.</h5>
+					</article>
 
-		<div class="cont-per-box" class="left-vol-box">
-			<img src="../imagenes/kiosko2.jpg">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<h5>Nombre: oKiosko</h5>
-			<h5>Facebook: <a href="https://www.facebook.com">oKiosko</a></h5>
-			<h5>Direccion: Mi casita 0802</h5>
-			<h5>Celular: 4353564576767</h5>
-			<h5>Funcion: Asociado. En El kiosquero piola puedes dejar alimentos para animal y prendas viejas para su reacondicionamiento, ellos se encargaran de que lleguen a manos de Pulgarcito Adopciones.</h5>
-		</div>
+					<article class="hei-map col-md-6 col-lg-3 bg-dark-g">
+						<img class="py-3 img-vet" width="200px" height="200px" src="../imagenes/kiosko2.jpg">
+						<iframe class="py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<h5><b>Nombre: Kiosko Dos</b></h5>
+						<h5>Direccion: Mi casita 202</h5>
+						<h5>Facebook: <a href="https://www.facebook.com">Kiosko Dos</a></h5>
+						<h5>Instagram: <a href="https://www.instagram.com">@kioskodos</a></h5>
+						<h5>Celular: <span class="nro-tel">1234567890</span></h5>
+						<h5>Funcion: Asociado. En Kiosko Dos puedes dejar alimentos para animal y prendas viejas para su reacondicionamiento, ellos se encargaran de que lleguen a manos de Pulgarcito Adopciones.</h5>
+					</article>
 
-		<div class="cont-per-box" class="left-vol-box">
-			<img src="../imagenes/libreria1.jpg">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<h5>Nombre: LibreriaPerrito</h5>
-			<h5>Twitter: <a href="https://www.twitter.com">@LibreriaPerrito</a></h5>
-			<h5>Direccion: Mi casita 0804</h5>
-			<h5>Celular: 4353564576767</h5>
-			<h5>Funcion: Asociado. Puedes acercarte en los horarios designados los fines de semana para ayudar a manufacturar ropa de animales y construir casas hechas de materiales reciclables.</h5>
-		</div>
+					<article class="hei-map col-md-6 col-lg-3 bg-dark-g">
+						<img class="py-3 img-vet" width="200px" height="200px" src="../imagenes/libreria1.jpg">
+						<iframe class="py-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.022460629794!2d-65.37501638449295!3d-24.794684414174164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc4876546c571%3A0x2bd130bf8f9c22de!2sVeterinaria%20Autodromo!5e0!3m2!1ses-419!2sar!4v1654139222456!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<h5><b>Nombre: Libreria Uno</b></h5>
+						<h5>Direccion: Mi casita 303</h5>
+						<h5>Facebook: <a href="https://www.facebook.com">Libreria Uno</a></h5>
+						<h5>Instagram: <a href="https://www.instagram.com">@libreriauno</a></h5>
+						<h5>Celular: <span class="nro-tel">1234567890</span></h5>
+						<h5>Funcion: Asociado. Puedes acercarte en los horarios designados los fines de semana para ayudar a manufacturar ropa de animales y construir casas hechas de materiales reciclables.</h5>
+					</article>
+			</div>
+	</section>
+
+	<section class="py-3">
 		<article>
 			<p>Si deseas inscribirte como negocio ayudante de Pulgarcito Adopciones recuerda que en nuestra pestaña de <a href="contactos.html">ayudantes</a> vas a encontrar a nuestros voluntarios. Con ayuda de ellos puedes sumarte de la manera que necesites a nuestra causa!</p>
 		</article>
 	</section>
 	
-	<div>
-		<footer>
+	<section>
+		<footer class="foot-vet">
 			<h2 class="elem-foot">Contactate con nosotros y mantenete al tanto de las novedades de nuestra org en: </h2>
 			<a class="elem-foot" href="https://www.facebook.com"><img src="../imagenes/facebook.jpg" width="50" height="50"></a>
 			<a class="elem-foot" href="https://www.instagram.com"><img src="../imagenes/instagram.jpg" width="50" height="50"></a>
 		</footer>
-	</div>
+	</section>
 </body>
 </html>
