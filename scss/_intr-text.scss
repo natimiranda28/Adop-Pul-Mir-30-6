@@ -1,0 +1,25 @@
+.intr-text{
+	grid-area: intr-text;
+	@keyframes animation2 {
+    from {
+        opacity: 0;
+    }
+    15%, 45% {
+        opacity: .15;
+    }
+    25%, 75% {
+        opacity: .35;
+    }
+    to {
+        opacity: 0;
+   	 }
+	}
+	p{
+	color: MediumPurple;
+	font-size: 150%;
+	margin: 10px;
+	animation-duration: 1s;
+	animation-name: animation2;
+	animation-iteration-count: 1;
+	}
+}

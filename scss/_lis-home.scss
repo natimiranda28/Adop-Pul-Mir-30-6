@@ -1,0 +1,27 @@
+.lis-home{
+	grid-area: lis-home;
+	.main-titulo{
+		background-color: rgb(204, 230, 255);
+		text-align: center;
+		font-size: 200%;
+		padding: 0;
+		margin: 0;
+		top: 0;
+	}
+	@keyframes animation1{
+	0%{
+		opacity: 0;
+		}
+	100%{
+		opacity: 1;
+		}
+	}
+	.bg-dark-g{
+		border: rgb(255, 230, 247) solid;
+		background-color: lightgray;
+		border-radius: 20px;
+		animation-duration: 2s;
+		animation-name: animation1;
+		animation-iteration-count: 1;
+	}
+}
