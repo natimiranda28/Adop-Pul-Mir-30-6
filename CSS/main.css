@@ -1,217 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Tai+Heritage+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Tai+Heritage+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
 
-/*CSS orientado a aspectos grales y sobre index*/
+header {
+  grid-area: nav; }
+  header:hover {
+    color: #ffe6f7; }
+  header .main-titulo {
+    background-color: #cce6ff;
+    text-align: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+    top: 0; }
+  header .bg-light-pink {
+    background-color: #ffe6f7; }
+  header .container-fluid .logo {
+    display: inline-block;
+    width: 40px;
+    float: left;
+    border-radius: 50%; }
+  header .container-fluid .navbar-nav a {
+    font-size: 1.5em; }
 
-*{
-	margin: 0;
-	padding: 0;
-    font-family: 'Roboto', sans-serif;
-}
+footer {
+  grid-area: footer;
+  background-color: #ffe6f7;
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+  footer .elem-foot {
+    display: inline-block;
+    margin: 5px; }
+    footer .elem-foot img:hover {
+      transform: scale(1.2, 1.2); }
 
-header h1: hover{
-	color: rgb(255, 230, 247);
-}
+.lis-home {
+  grid-area: lis-home; }
+  .lis-home .main-titulo {
+    background-color: #cce6ff;
+    text-align: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+    top: 0; }
 
-.main-titulo{
-	background-color: rgb(204, 230, 255);
-	text-align: center;
-	font-size: 200%;
-	padding: 0;
-	margin: 0;
-	top: 0;
-}
+@keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .lis-home .bg-dark-g {
+    border: #ffe6f7 solid;
+    background-color: lightgray;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-name: animation1;
+    animation-iteration-count: 1; }
+  .lis-home p {
+    font-size: 150%; }
 
-.bg-light-pink{
-	background-color: rgb(255, 230, 247);
-	width: 100%;
-}
-
-.logo{
-	display: inline-block;
-	width: 40px;
-	float: left;
-	border-radius: 50%;
-}
-
-@keyframes animation1{
-	0%{
-		opacity: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
+.intr-text {
+  grid-area: intr-text; }
 
 @keyframes animation2 {
-    from {
-        opacity: 0;
-    }
-    15%, 45% {
-        opacity: .15;
-    }
-    25%, 75% {
-        opacity: .35;
-    }
-    to {
-        opacity: 0;
-    }
-}
+  from {
+    opacity: 0; }
+  15%,
+  45% {
+    opacity: .15; }
+  25%,
+  75% {
+    opacity: .35; }
+  to {
+    opacity: 0; } }
+  .intr-text p {
+    color: MediumPurple;
+    font-size: 200%;
+    margin: 10px;
+    animation-duration: 1s;
+    animation-name: animation2;
+    animation-iteration-count: 1; }
 
-.bg-dark-g{
-	border: rgb(255, 230, 247) solid;
-	background-color: lightgray;
-	border-radius: 20px;
-	animation-duration: 2s;
-	animation-name: animation1;
-	animation-iteration-count: 1;
-}
+#contenedor-grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "nav" "intr-text" "lis-home" "footer"; }
 
-p{
-	color: MediumPurple;
-	font-size: 150%;
-	margin: 10px;
-	animation-duration: 1s;
-	animation-name: animation2;
-	animation-iteration-count: 1;
-}
+@media (max-width: 768px) {
+  .navbar-header {
+    margin: 5px; }
+  .nav-item {
+    text-align: center;
+    font-size: 1.5em; }
+  footer .elem-foot {
+    margin: 5px;
+    font-size: 1.4em; } }
 
-footer{
-	grid-area: footer;
-	background-color: rgb(255, 230, 247);
-	position: sticky;
-  	bottom: 0;
-  	width: 100vw;
-  	display: flex;
-  	flex-direction: row;
-}
-
-.elem-foot{
-	margin: 5px;
-}
-
-.elem-foot img:hover{
-	transform: scale(1.2,1.2);
-}
-
-header{
-	grid-area: nav;
-}
-
-.intr-text{
-	grid-area: intr-text;
-}
-
-.lis-home{
-	grid-area: lis-home;
-}
-
-#contenedor-grid{
-	width: 100vw;
-	height: 100vh;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, 1fr);
-	grid-template-areas: "nav" "intr-text" "lis-home" "footer";
-}
-
-.navbar-nav a{
-	font-size: 1.5em;
-}
-
-/* Desde aqui empienza el codigo CSS con modificaciones orientadas para Contactos*/
-
-.cas-per{
-	text-align: center;
-}
-
-.cas-per img{
-	border-radius: 10%;
-}
-
-.cas-per img: hover{
-	transform: scale(1.2,1.2);
-}
-
-/* Modificaciones realizadas para la correcta implementacion de Asociados.html*/
-
-article .img-vet{
-	float: left;
-	top: 0;
-}
-
-.foot-vet{
-	grid-area: footer;
-	background-color: rgb(255, 230, 247);
-	position: absolute;
-  	bottom: 0;
-  	width: 100vw;
-  	display: flex;
-  	flex-direction: row;
-}
-
-/* Modificaciones realizadas para la correcta implementacion de Donaciones.html*/
-
-.logo-don{
-	display: inline-block;
-	border-radius: 50%;
-	width: 100px;
-	margin: 0 10px;
-}
-
-.link-dona{
-	font-size: 3em;
-}
-
-.link-aling{
-	text-align: center;
-}
-
-/*Media queries necesarios para el funcionamiento optimo de la pagina*/
-
-@media (max-width: 768px){
-	.elem-foot{
-		margin: 5px;
-		font-size: 1.2em;
-	}
-
-	h5 a{
-		font-size: 1.6em;
-		text-decoration: none;
-		color: darkblue;
-	}
-
-	.nro-tel{
-		font-size: 1.6em;
-		color: darkblue;
-	}
-
-	.img-vet{
-		width: 95%;
-		height: 45%;
-	}
-
-	article .img-vet{
-	float: center;
-	top: 0;
-	}
-
-	.foot-vet{
-		position: sticky;
-	}
-
-	.hei-map{
-		height: 150%;
-	}
-
-	.lis-donations{
-		font-size: .3em;
-	}
-
-	.logo-don{
-	border-radius: 50%;
-	width: 55%;
-	margin: 0 10px;
-	}
-}
+@media (min-width: 768px) and (max-width: 872px) {
+  .foot-vet {
+    position: relative; }
+  .img-vet {
+    width: 95%;
+    height: 45%; }
+  article .img-vet {
+    float: center;
+    top: 0; } }

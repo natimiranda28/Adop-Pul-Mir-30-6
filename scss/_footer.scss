@@ -1,16 +1,19 @@
-footer{
+footer {
 	grid-area: footer;
 	background-color: rgb(255, 230, 247);
 	position: sticky;
-  	bottom: 0;
-  	width: 100vw;
-  	display: flex;
-  	flex-direction: row;
-  	.elem-foot{
-	margin: 5px;
-		img{
-			&:hover{
-			transform: scale(1.2,1.2);
+	bottom: 0;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+
+	.elem-foot {
+		display: inline-block;
+		margin: 5px;
+
+		img {
+			&:hover {
+				transform: scale(1.2, 1.2);
 			}
 		}
 	}
