@@ -84,7 +84,7 @@ p {
 footer {
 	grid-area: footer;
 	background-color: rgb(255, 230, 247);
-	position: sticky;
+	position:sticky;
 	bottom: 0;
 	width: 100vw;
 	display: flex;

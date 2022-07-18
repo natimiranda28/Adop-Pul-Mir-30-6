@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\"",
+    "build":"purgecss --css css/main.css --content index.html -o css/reducido.css"
   },
   "repository": {
     "type": "git",
@@ -43,6 +44,7 @@
     "balanced-match": "^1.0.2",
     "bcrypt-pbkdf": "^1.0.2",
     "binary-extensions": "^2.2.0",
+    "boostrap": "^2.0.0",
     "brace-expansion": "^1.1.11",
     "braces": "^3.0.2",
     "cacache": "^15.3.0",

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Tai+Heritage+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; }
+
+header {
+  grid-area: nav; }
+  header:hover {
+    color: #ffe6f7; }
+  header .main-titulo {
+    background-color: #cce6ff;
+    text-align: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+    top: 0; }
+  header .bg-light-pink {
+    background-color: #ffe6f7; }
+  header .container-fluid .logo {
+    display: inline-block;
+    width: 40px;
+    float: left;
+    border-radius: 50%; }
+  header .container-fluid .navbar-nav a {
+    font-size: 1.5em; }
+
+footer {
+  grid-area: footer;
+  background-color: #ffe6f7;
+  position: sticky;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+  footer .elem-foot {
+    display: inline-block;
+    margin: 5px; }
+    footer .elem-foot img:hover {
+      transform: scale(1.2, 1.2); }
+
+.lis-home {
+  grid-area: lis-home; }
+  .lis-home .main-titulo {
+    background-color: #cce6ff;
+    text-align: center;
+    font-size: 200%;
+    padding: 0;
+    margin: 0;
+    top: 0; }
+
+@keyframes animation1 {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .lis-home .bg-dark-g {
+    border: #ffe6f7 solid;
+    background-color: lightgray;
+    border-radius: 20px;
+    animation-duration: 2s;
+    animation-name: animation1;
+    animation-iteration-count: 1; }
+  .lis-home p {
+    font-size: 150%; }
+
+.intr-text {
+  grid-area: intr-text; }
+
+@keyframes animation2 {
+  from {
+    opacity: 0; }
+  15%,
+  45% {
+    opacity: .15; }
+  25%,
+  75% {
+    opacity: .35; }
+  to {
+    opacity: 0; } }
+  .intr-text p {
+    color: MediumPurple;
+    font-size: 200%;
+    margin: 10px;
+    animation-duration: 1s;
+    animation-name: animation2;
+    animation-iteration-count: 1; }
+
+@media (max-width: 768px) {
+  .navbar-header {
+    margin: 5px; }
+  .nav-item {
+    text-align: center;
+    font-size: 1.5em; }
+  footer .elem-foot {
+    margin: 5px;
+    font-size: 1.4em; } }
