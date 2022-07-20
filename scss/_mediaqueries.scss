@@ -14,6 +14,41 @@
 		font-size: 1.4em;
 		}
 	}
+
+	h5{
+		a{
+			@include texto-deco(darkblue,1em,1.6em,animation1);
+		}
+	}
+
+	.nro-tel {
+		font-size: 1.6em;
+		color: darkblue;
+	}
+
+	.foot-vet{
+		position: fixed;
+		article{
+			.img-vet{
+				float: center;
+				top: 0;
+			}
+		}
+	}
+
+	.hei-map {
+		height: 150%;
+	}
+
+	.lis-donations {
+		font-size: .3em;
+	}
+
+	.logo-don {
+		border-radius: 50%;
+		width: 55%;
+		margin: 0 10px;
+	}
 }
 
 @media (min-width: 768px) and (max-width: 872px){

@@ -1,0 +1,9 @@
+.cas-per{
+    text-align: center;
+    img{
+        border-radius: 10%;
+        &:hover{
+            transform: scale(1.05, 1.05);
+        }
+    }
+}

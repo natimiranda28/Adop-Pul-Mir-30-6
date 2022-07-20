@@ -1,0 +1,11 @@
+article {
+    .img-vet {
+        float: left;
+        top: 0;
+    }
+}
+
+.foot-vet {
+    @extend footer;
+    position: absolute;
+}

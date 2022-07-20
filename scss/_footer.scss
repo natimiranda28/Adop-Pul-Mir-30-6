@@ -7,6 +7,10 @@ footer {
 	display: flex;
 	flex-direction: row;
 
+	h2{
+		@include texto-deco(grey,1.5em,200%,animation2);
+	}
+	
 	.elem-foot {
 		display: inline-block;
 		margin: 5px;

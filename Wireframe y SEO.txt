@@ -20,6 +20,12 @@ https://wireframe.cc/nxemMd (mobile)
 
 Mejoras SEO:
 . Implementacion de imagenes formato webp para mejor optimizacion de la pagina
-. Implementacion de metadatos para una mejor pocisionamiento de la pagina en los search engines
+. Implementacion de metadatos de descripcion de pagina
 . Mejor implementacion de tagets para la mejor navegacion de nuestro sitio web y que nuestros usuarios no sean constantemente redireccionados de manera incorrecra
 . Añadimos el lenguaje adecuado a nuestro sitio web
+. Implementamos alt en las imagenes de la pag index para mejor comprension de la pagina
+. Se agrego Mixin al proyecto
+. Se agrego Extend al proyecto
+. Se implemento el archivo .xml para quien lo requiera o necesite
+. Implementacion de metadatos de palabras sugeridas para nuestro sitio web
+. Añadimos una preview de la pagina con los cambios de metadatos incluidos

@@ -22,11 +22,7 @@
 	}
 
 	p {
+		@extend p;
 		color: MediumPurple;
-		font-size: 200%;
-		margin: 10px;
-		animation-duration: 1s;
-		animation-name: animation2;
-		animation-iteration-count: 1;
 	}
 }
