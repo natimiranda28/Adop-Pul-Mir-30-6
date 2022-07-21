@@ -126,10 +126,7 @@ footer, .foot-vet {
     font-size: 1.6em;
     color: darkblue; }
   .foot-vet {
-    position: fixed; }
-    .foot-vet article .img-vet {
-      float: center;
-      top: 0; }
+    position: sticky; }
   .hei-map {
     height: 150%; }
   .lis-donations {

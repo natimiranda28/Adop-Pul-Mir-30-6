@@ -27,13 +27,7 @@
 	}
 
 	.foot-vet{
-		position: fixed;
-		article{
-			.img-vet{
-				float: center;
-				top: 0;
-			}
-		}
+		position: sticky;
 	}
 
 	.hei-map {
@@ -55,6 +49,7 @@
 	.foot-vet {
 		position: relative;
 	}
+	
 	.img-vet {
 		width: 95%;
 		height: 45%;
