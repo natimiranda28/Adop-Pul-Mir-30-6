@@ -47,7 +47,8 @@
 
 @media (min-width: 768px) and (max-width: 872px){
 	.foot-vet {
-		position: relative;
+		position: sticky;
+		bottom: 0;      
 	}
 	
 	.img-vet {

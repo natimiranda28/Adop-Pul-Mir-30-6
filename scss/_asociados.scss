@@ -7,5 +7,5 @@ article {
 
 .foot-vet {
     @extend footer;
-    position: absolute;
+    position: sticky;
 }
