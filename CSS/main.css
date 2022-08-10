@@ -106,6 +106,41 @@ footer, .foot-vet {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "nav" "intr-text" "lis-home" "footer"; }
 
+.cas-per {
+  text-align: center; }
+  .cas-per img {
+    border-radius: 10%; }
+    .cas-per img:hover {
+      transform: scale(1.05, 1.05); }
+
+article .img-vet {
+  float: left;
+  top: 0; }
+
+.foot-vet {
+  position: sticky; }
+
+.logo-don {
+  display: inline-block;
+  border-radius: 50%;
+  width: 100px;
+  margin: 0 10px; }
+
+.link-dona {
+  font-size: 3em; }
+
+.link-aling {
+  text-align: center; }
+
+.art-error img {
+  margin: auto;
+  display: block; }
+
+.art-error .titulo-error {
+  text-align: center;
+  font-size: 200px;
+  color: red; }
+
 @media (max-width: 768px) {
   .navbar-header {
     margin: 5px; }
@@ -134,7 +169,15 @@ footer, .foot-vet {
   .logo-don {
     border-radius: 50%;
     width: 55%;
-    margin: 0 10px; } }
+    margin: 0 10px; }
+  .art-error img {
+    margin: auto;
+    display: block;
+    width: 350px;
+    height: 300px; }
+  .art-error .titulo-error {
+    font-size: 100px;
+    text-align: center; } }
 
 @media (min-width: 768px) and (max-width: 872px) {
   .foot-vet {
@@ -146,32 +189,6 @@ footer, .foot-vet {
   article .img-vet {
     float: center;
     top: 0; } }
-
-.cas-per {
-  text-align: center; }
-  .cas-per img {
-    border-radius: 10%; }
-    .cas-per img:hover {
-      transform: scale(1.05, 1.05); }
-
-article .img-vet {
-  float: left;
-  top: 0; }
-
-.foot-vet {
-  position: sticky; }
-
-.logo-don {
-  display: inline-block;
-  border-radius: 50%;
-  width: 100px;
-  margin: 0 10px; }
-
-.link-dona {
-  font-size: 3em; }
-
-.link-aling {
-  text-align: center; }
 
 /*!
    * Bootstrap  v5.2.0 (https://getbootstrap.com/)

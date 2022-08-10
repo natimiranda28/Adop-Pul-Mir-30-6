@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Tai+Heritage+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto:wght@100&family=Tai+Heritage+Pro&display=swap');
 
+$rojo: rgb(255,0,0);
+$rosa-claro: rgb(255, 230, 247);
+
 * {
 	margin: 0;
 	padding: 0;
@@ -9,7 +12,7 @@
 }
 
 .bg-dark-g{
-	border: rgb(255, 230, 247) solid;
+	border: $rosa-claro solid;
 	background-color: lightgray;
 	border-radius: 20px;
 	animation-duration: 2s;
@@ -18,7 +21,7 @@
 }
 
 .bg-light-pink{
-	background-color: rgb(255, 230, 247);
+	background-color: $rosa-claro;
 }
 
 p {
